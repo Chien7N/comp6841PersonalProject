@@ -1,0 +1,48 @@
+# Python Venv setup for PWN
+- Download Pycharm in App Center or Online
+- Before start:
+- mkdir ctf
+- cd ctf
+- mkdir pwn
+- cd pwn
+- Here is for python virtual environment
+- sudo apt update
+- sudo apt upgrade -y
+- sudo apt install python3 python3-venv python3-pip -y
+- python3 --version
+- pip3 --version
+- python3 -m venv venv    #this line should be in your pwn working file
+- source venv/bin/activate	#Everytime start venv by this command
+- pip install --upgrade pip
+- Prepare pwntools to connect to TCP server
+- pip install pwntools
+- sudo apt update
+- python3 -c "from pwn import *; print('pwntools OK!')"
+- sudo apt update
+- Prepare for GDB, which can help you check memory address
+- sudo apt install gdb -y
+- Install Docker:
+- https://docs.docker.com/engine/install/ubuntu/
+- Build container by Docker:
+- sudo docker build -t FolderName . (Don't forget the “.” after fileName)
+- Run container by Docker:
+- Install Gdbdbg:
+- git clone https://github.com/pwndbg/pwndbg
+- cd pwndbg
+- ./setup.sh
+- Install msfvenom:
+- sudo apt update
+- sudo apt install -y git ruby ruby-dev make libpcap-dev \
+- libpq-dev libsqlite3-dev zlib1g-dev libxml2-dev \
+- libxslt1-dev libgmp-dev openssl libreadline-dev \
+- libcurl4-openssl-dev libssl-dev libyaml-dev \
+- autoconf postgresql pgadmin3
+
+
+- git clone https://github.com/rapid7/metasploit-framework.git
+- cd metasploit-framework
+- sudo apt  install ruby-bundler
+- Using msfvenom:
+- Too many command
+- Using Ropper:
+- pip install ropper

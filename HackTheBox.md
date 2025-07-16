@@ -1,0 +1,17 @@
+# HackTheBox Get started
+- Choose a learning platform like HACK THE BOX or TRY HACK ME
+- Install Virtual Machine (My version is VMware with Ubuntu64 or Kali)
+- setup VPN for practice
+- download the openvpn file in HTB website
+- mkdir ctf
+- cd ctf
+- mkdir vpn
+- cd vpn
+- sudo apt install openvpn
+- sudo openvpn “your vpn file name”
+- the terminal is running the vpn now, you can open a new terminal
+- try to check your unique IP address from HTB website
+- ping “your ip address”
+- press “control + C” to stop the ping, with 0 package loss
+- sudo apt install nmap -y
+- sudo nmap -sV -sC -sS “your ip address”
